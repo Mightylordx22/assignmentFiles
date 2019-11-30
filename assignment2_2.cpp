@@ -73,7 +73,11 @@ void genTimeTable() {
         }
     }
     for (int i(1); i < userIn+1; i++) {
+<<<<<<< HEAD
         print(to_string(userIn)+" x " + to_string(i) + " = " + to_string(userIn * i));
+=======
+        print("3 x " + to_string(i) + " = " + to_string(3 * i));
+>>>>>>> 50803862fc1ed8a58622ba2c2b3a24c28269a266
     }
 }
 

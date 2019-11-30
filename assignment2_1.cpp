@@ -35,7 +35,13 @@ int validInt() {
 }
 
 // Euclidean algorithm
+<<<<<<< HEAD
 void euclid(int a, int b) {
+=======
+void euclid() {
+    int a = validInt(); // Sets a as a valid integer
+    int b = validInt(); // Sets b as a valid integer
+>>>>>>> 50803862fc1ed8a58622ba2c2b3a24c28269a266
     int c = a % b; // set c to the mod of a and b
     while (c != 0) {
         // Swaps the integers and mods them
@@ -50,6 +56,7 @@ void euclid(int a, int b) {
 // <-- Main Program -->
 
 int main() {
+<<<<<<< HEAD
     int a = validInt(); // Sets a as a valid integer
     int b = validInt(); // Sets b as a valid integer
     euclid(a,b); // Calls the function
@@ -60,5 +67,8 @@ int main() {
     euclid(16,24);
     euclid(77,28);
     euclid(42,72);
+=======
+    euclid(); // Calls the function
+>>>>>>> 50803862fc1ed8a58622ba2c2b3a24c28269a266
     return 0;
 }
