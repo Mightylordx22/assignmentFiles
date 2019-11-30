@@ -29,7 +29,7 @@ bool userCarryOn() {
 void genRanNumbers() {
     print("Five random numbers are :");
     for (int i(0); i < 5; i++) {
-        print(to_string(i+1)+"] "+to_string(rand() % 500 + 1));
+        print(to_string(i + 1) + "] " + to_string(rand() % 500 + 1));
     }
 }
 
@@ -43,7 +43,8 @@ void getSqrt() {
             cin >> userIn;
             if (cin.fail()) { // Checks to see if the input has failed or not
                 cin.clear(); // if it has then it clears the input
-                cin.ignore(numeric_limits<streamsize>::max(), '\n'); // This is to stop an infinite loop from occurring if the input failed
+                cin.ignore(numeric_limits<streamsize>::max(),
+                           '\n'); // This is to stop an infinite loop from occurring if the input failed
                 print("Sorry that is not valid option please try again!"); // Asks the user to enter something again
             } else {
                 print("The square root of " + to_string(userIn) + " is " + to_string(sqrt(userIn)));
@@ -64,7 +65,8 @@ void genTimeTable() {
         cin >> userIn;
         if (cin.fail()) { // Checks to see if the input has failed or not
             cin.clear(); // if it has then it clears the input
-            cin.ignore(numeric_limits<streamsize>::max(), '\n'); // This is to stop an infinite loop from occurring if the input failed
+            cin.ignore(numeric_limits<streamsize>::max(),
+                       '\n'); // This is to stop an infinite loop from occurring if the input failed
             print("Sorry that is not valid option please try again!"); // Asks the user to enter something again
         } else if (userIn < 1 or userIn > 15) {
             print("Sorry that is not a valid option please try again!");
@@ -72,12 +74,8 @@ void genTimeTable() {
             valid = true;
         }
     }
-    for (int i(1); i < userIn+1; i++) {
-<<<<<<< HEAD
-        print(to_string(userIn)+" x " + to_string(i) + " = " + to_string(userIn * i));
-=======
-        print("3 x " + to_string(i) + " = " + to_string(3 * i));
->>>>>>> 50803862fc1ed8a58622ba2c2b3a24c28269a266
+    for (int i(1); i < userIn + 1; i++) {
+        print(to_string(userIn) + " x " + to_string(i) + " = " + to_string(userIn * i));
     }
 }
 
