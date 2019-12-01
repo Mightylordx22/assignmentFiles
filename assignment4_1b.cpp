@@ -20,20 +20,7 @@ void print(const string &arg) {
 int validInt() {
     bool valid = false;
     int userIn;
-    while (!valid) {
-        print("Please enter a positive integer:");
-        cin >> userIn;
-        if (cin.fail()) { // Checks to see if the input has failed or not
-            cin.clear(); // if it has then it clears the input
-            cin.ignore(numeric_limits<streamsize>::max(),
-                       '\n'); // This is to stop an infinite loop from occurring if the input failed
-            print("Sorry that is not valid option please try again!"); // Asks the user to enter something again
-        } else {
-            valid = true;
-        }
-    }
-    return userIn;
-}
+    while (!vali
 
 void isPrime() {
     int n = 100; // Sets an integer called n to a valid positive integer
